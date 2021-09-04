@@ -1,0 +1,20 @@
+[user]
+	name = William Good
+[include]
+    path = ~/.gitconfig.local
+[core]
+	editor = vim
+	abbrev = auto
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[alias]
+	co = checkout
+[commit]
+	verbose = 1
+[log]
+	decorate = auto
+	follow = true
+[pull]
+	ff = only
