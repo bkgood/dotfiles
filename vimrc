@@ -24,6 +24,8 @@ set undodir=~/.vim/undo//
 set hidden
 
 set showmatch
+set showcmd
+set incsearch
 
 set completeopt=menu,menuone,noinsert,noselect,preview
 set shiftround
