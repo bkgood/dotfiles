@@ -2,9 +2,9 @@ DESTDIR ?= ~
 
 link := ln --force --relative --no-target-directory --symbolic
 
-files := vimrc gitconfig
+files := vim gitconfig
 
-dirs := .vim/swap .vim/undo
+dirs :=
 
 $(dirs):
 	mkdir --parents $(DESTDIR)/$@
