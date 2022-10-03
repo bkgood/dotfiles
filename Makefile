@@ -1,6 +1,12 @@
 DESTDIR ?= ~
 
-link := ln --force --relative --no-target-directory --symbolic
+ifeq ($(shell uname),Darwin)
+	ln := gln
+else
+	ln := ln
+endif
+
+link := $(ln) --force --relative --no-target-directory --symbolic
 
 files := vim gitconfig
 
