@@ -1,6 +1,10 @@
 DESTDIR ?= ~
 
 ifeq ($(shell uname),Darwin)
+	ifeq (, $(shell which gln))
+		$(error "No gln in $(PATH), install gnu coreutils")
+	endif
+
 	ln := gln
 else
 	ln := ln
