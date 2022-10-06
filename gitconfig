@@ -16,5 +16,6 @@
 [log]
 	decorate = auto
 	follow = true
+	abbrevCommit = true
 [pull]
 	ff = only
