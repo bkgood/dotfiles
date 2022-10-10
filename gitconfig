@@ -1,5 +1,6 @@
 [user]
 	name = William Good
+	useConfigOnly = true
 [include]
     path = ~/.gitconfig.local
 [core]
